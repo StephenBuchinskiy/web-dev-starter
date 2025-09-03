@@ -47,4 +47,27 @@ QUnit.module('main.js tests', function() {
         assert.equal(result, expected, 'add(2, -3) should return -1');
     });
 
+    QUnit.test('add should throw an error if there are missing inputs', function(assert) {
+        // Arrange
+        const num1 = 5;
+        // Act & Assert
+        assert.throws(
+            function() {
+                add(num1);
+            }, 
+            'add(5) should throw an error due to missing argument');
+    });
+
+    QUnit.test('add should throw an error if there are incorrect inputs', function(assert) {
+        // Arrange
+        const num1 = 5;
+        const num2 = "two";
+        // Act & Assert
+        assert.throws(
+            function() {
+                add(num1, num2);
+            }, 
+            'add(5, "two") should throw an error due to incorrect type');
+    });
+
 });

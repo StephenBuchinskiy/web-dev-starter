@@ -9,9 +9,11 @@ that are written in plain HTML, CSS, and JavaScript.
 To get started, clone this repository and run the following commands:
 
 ```bash
-npm install
+npm install (make sure to have Node.js installed)
 ```
 This will install the necessary dependencies for the project.
+Then, open the project folder in VSCode to see all project files.
+To run the website, simply press F1 and type "Live Preview: Start Server".
 
 ## Development
 

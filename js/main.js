@@ -7,10 +7,10 @@
  */
 
 /**
- * This function prints the string 'Hello World' to the console
+ * This function displays the string 'Hello World' to the user via a dialog box
  */
 export function helloWorld() {
-    console.log('Hello World');
+    alert('Hello World');
 }
 
 /**
